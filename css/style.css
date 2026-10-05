@@ -17,3 +17,32 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.nav-link {
+    color: #f4bf06;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f4bf06;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0.25rem;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+    color: #f4bf06;
+}
