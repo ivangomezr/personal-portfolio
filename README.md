@@ -1,6 +1,6 @@
 # Iván Gómez's portfolio
 
-## Structure
+## Initial Structure
 - About me
 - Work Experience
 - Education
