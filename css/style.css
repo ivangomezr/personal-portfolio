@@ -46,3 +46,9 @@ body {
     width: 70%;
     color: #f4bf06;
 }
+.img {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
