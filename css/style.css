@@ -46,6 +46,7 @@ body {
     width: 70%;
     color: #f4bf06;
 }
+
 .img {
     width: 250px;
     aspect-ratio: 1 / 1;
@@ -107,7 +108,7 @@ body {
     bottom: 0;
     width: 2px;
     background: rgba(255, 255, 255, 0.15);
-    background-color: #666f6f;
+    background-color: #f4bf06;
 }
 
 .timeline-item {
@@ -123,7 +124,11 @@ body {
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
+    margin-top: 0.5rem;
     background: rgba(255, 255, 255, 0.3);
+    background-color: #f4bf06;
+}
+
 .btn {
     color: #f4bf06;
     margin: 0.5rem;
