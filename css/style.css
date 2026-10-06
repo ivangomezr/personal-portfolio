@@ -69,6 +69,15 @@ body {
     box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
 }
 
+.company-logo {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
 .facts {
     list-style: none;
     margin: 0;
