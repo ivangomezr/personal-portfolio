@@ -138,6 +138,21 @@ body {
     background-color: #f4bf06;
 }
 
+.timeline-role {
+    padding-top: 0.4rem;
+}
+
+.timeline-company {
+    color: #CFE0E3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.timeline-company:hover {
+    color: #f4bf06;
+    text-decoration: none;
+}
+
 .btn {
     color: #f4bf06;
     margin: 0.5rem;
