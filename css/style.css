@@ -241,6 +241,13 @@ a.timeline-company i {
     line-height: 1.2;
 }
 
+.skill-icon-fa {
+    font-size: 2.8rem;
+    line-height: 1;
+    margin-bottom: 0.75rem;
+    color: #7fd3c9;
+}
+
 footer {
     width: 60%;
     margin: 0 auto;
