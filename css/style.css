@@ -184,6 +184,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2);
+}
+
 .skill-icon {
     width: 100%;
     max-width: 50px;
