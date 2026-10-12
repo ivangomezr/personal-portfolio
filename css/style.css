@@ -203,4 +203,20 @@ body {
     font-weight: 700;
     line-height: 1.2;
 }
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1.75rem 0;
+    display: flex;
+    align-items: center;
+    color: #cfe0e3;
+}
+
+.footer-icons {
+    color: #cfe0e3;
+}
+
+.footer-icons:hover {
+    color: #757e80;
 }
