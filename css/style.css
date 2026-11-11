@@ -339,18 +339,37 @@ a.timeline-company i {
 }
 
 footer {
-    width: 60%;
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 1.75rem 0;
+    padding: 1.75rem 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    box-sizing: border-box;
+    color: #cfe0e3;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.footer-socials {
     display: flex;
     align-items: center;
-    color: #cfe0e3;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 .footer-icons {
     color: #cfe0e3;
+    transition: color 0.3s ease;
 }
 
 .footer-icons:hover {
-    color: #757e80;
+    color: #f4bf06;
 }
