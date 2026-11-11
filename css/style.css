@@ -26,6 +26,7 @@ body {
 }
 
 .nav-link {
+    display: inline-block;
     color: #f4bf06;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
@@ -39,7 +40,7 @@ body {
 .nav-link::after {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 0;
     bottom: 0.25rem;
     width: 0;
     height: 2px;
@@ -49,8 +50,32 @@ body {
 
 .nav-link:hover::after,
 .nav-link.active::after {
-    width: 70%;
+    width: 100%;
     color: #f4bf06;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    color: #f4bf06;
+    border: 1px solid #f4bf06;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 1.3rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .img {
