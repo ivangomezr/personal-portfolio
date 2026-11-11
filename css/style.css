@@ -12,8 +12,11 @@ body {
 }
 
 .container {
-    width: 60%;
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .navbar {
@@ -23,6 +26,7 @@ body {
 }
 
 .nav-link {
+    display: inline-block;
     color: #f4bf06;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
@@ -36,23 +40,47 @@ body {
 .nav-link::after {
     content: "";
     position: absolute;
-    left: 50%;
+    left: 0;
     bottom: 0.25rem;
     width: 0;
     height: 2px;
     background-color: currentColor;
-    transform: translateX(-50%);
     transition: width 0.3s ease;
 }
 
 .nav-link:hover::after,
 .nav-link.active::after {
-    width: 70%;
+    width: 100%;
     color: #f4bf06;
 }
 
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    color: #f4bf06;
+    border: 1px solid #f4bf06;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 1.3rem;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .img {
-    width: 250px;
+    width: 220px;
+    max-width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
@@ -311,18 +339,37 @@ a.timeline-company i {
 }
 
 footer {
-    width: 60%;
+    width: 100%;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 1.75rem 0;
+    padding: 1.75rem 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    box-sizing: border-box;
+    color: #cfe0e3;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+.footer-socials {
     display: flex;
     align-items: center;
-    color: #cfe0e3;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 .footer-icons {
     color: #cfe0e3;
+    transition: color 0.3s ease;
 }
 
 .footer-icons:hover {
-    color: #757e80;
+    color: #f4bf06;
 }
