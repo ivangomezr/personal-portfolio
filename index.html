@@ -21,14 +21,14 @@
     <div class="container">
         <nav class="navbar navbar-expand-md">
             <!-- Hamburger button -->
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#portfolioNavbar"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portfolioNavbar"
                 aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation"
                 data-i18n-attr="aria-label:nav.toggle">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
             <!-- Language switch -->
-            <button id="lang-toggle" class="lang-switch ml-2 order-md-last" type="button" aria-label="Switch to Spanish"
+            <button id="lang-toggle" class="lang-switch ml-auto order-md-last" type="button" aria-label="Switch to Spanish"
                 data-i18n-attr="aria-label:lang.toggle">
                 <span class="lang-opt" data-lang="en">EN</span>
                 <span class="lang-opt" data-lang="es">ES</span>
@@ -525,6 +525,12 @@
         crossorigin="anonymous"></script>
     <script src="js/i18n.js" defer></script>
     <script src="js/script.js" defer></script>
+
+    <!-- Back to top -->
+    <button id="back-to-top" type="button" title="Back to top" aria-label="Back to top"
+        data-i18n-attr="aria-label:top.label;title:top.label">
+        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+    </button>
 
     <!-- Image Lightbox -->
     <div id="lightbox">
