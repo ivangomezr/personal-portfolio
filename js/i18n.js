@@ -11,6 +11,7 @@ const translations = {
         'nav.projects': 'Projects',
         'nav.skills': 'Skills',
         'lang.toggle': 'Switch to Spanish',
+        'top.label': 'Back to top',
 
         // Hero
         'hero.photoAlt': 'profile picture',
@@ -82,6 +83,7 @@ const translations = {
         'nav.projects': 'Proyectos',
         'nav.skills': 'Habilidades',
         'lang.toggle': 'Cambiar a inglés',
+        'top.label': 'Volver arriba',
 
         // Hero
         'hero.photoAlt': 'foto de perfil',
