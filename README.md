@@ -23,7 +23,7 @@ My personal portfolio: a single-page, **bilingual (English / Spanish)** and resp
 
 | Work Experience and Education | Skills |
 |---|---|
-| ![Work Experience and Education](screenshots/experience-education.png) | ![Skills](screenshots/skills.png) |
+| ![Work Experience and Education](screenshots/work-education.png) | ![Skills](screenshots/skills.png) |
 
 ---
 
