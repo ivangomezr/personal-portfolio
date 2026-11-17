@@ -21,9 +21,9 @@ My personal portfolio: a single-page, **bilingual (English / Spanish)** and resp
 |---|---|
 | ![Header and about me](screenshots/home.png) | ![Projects](screenshots/projects.png) |
 
-| Skills | Mobile view |
+| Work Experience and Education | Skills |
 |---|---|
-| ![Skills](screenshots/skills.png) | ![Mobile view](screenshots/mobile.png) |
+| ![Work Experience and Education](screenshots/experience-education.png) | ![Skills](screenshots/skills.png) |
 
 ---
 
