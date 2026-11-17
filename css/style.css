@@ -78,6 +78,48 @@ body {
     box-shadow: none;
 }
 
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.45rem 0.3rem 0.75rem;
+    background: transparent;
+    color: #f4bf06;
+    border: 1px solid #f4bf06;
+    border-radius: 999px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lang-switch:hover {
+    background-color: rgba(244, 191, 6, 0.12);
+}
+
+.lang-switch:focus {
+    outline: none;
+}
+
+.lang-switch:focus-visible {
+    box-shadow: 0 0 0 3px #f4bf06;
+}
+
+.lang-opt {
+    padding: 0.2rem 0.55rem;
+    border-radius: 999px;
+    opacity: 0.65;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.lang-opt.active {
+    background-color: #f4bf06;
+    color: #194549;
+    opacity: 1;
+}
+
 .img {
     width: 220px;
     max-width: 100%;
