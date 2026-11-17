@@ -22,27 +22,35 @@
         <nav class="navbar navbar-expand-md">
             <!-- Hamburger button -->
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#portfolioNavbar"
-                aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="portfolioNavbar" aria-expanded="false" aria-label="Toggle navigation"
+                data-i18n-attr="aria-label:nav.toggle">
                 <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Language switch -->
+            <button id="lang-toggle" class="lang-switch ml-2 order-md-last" type="button" aria-label="Switch to Spanish"
+                data-i18n-attr="aria-label:lang.toggle">
+                <span class="lang-opt" data-lang="en">EN</span>
+                <span class="lang-opt" data-lang="es">ES</span>
             </button>
 
             <!-- Navigation links -->
             <div class="collapse navbar-collapse justify-content-center" id="portfolioNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About me</a>
+                        <a class="nav-link" href="#about-me" data-i18n="nav.about">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#work-experience">Work experience</a>
+                        <a class="nav-link" href="#work-experience" data-i18n="nav.work">Work experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
+                        <a class="nav-link" href="#education" data-i18n="nav.education">Education</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a>
                     </li>
                 </ul>
             </div>
@@ -50,12 +58,15 @@
 
         <div class="row mt-5 align-items-center">
             <div class="col-12 col-md-4 text-center">
-                <img src="assets/img/myself.jpeg" alt="profile picture" class="img img-fluid">
+                <img src="assets/img/myself.jpeg" alt="profile picture" class="img img-fluid"
+                    data-i18n-attr="alt:hero.photoAlt">
             </div>
             <div class="col-12 col-md-8">
                 <h1 class="text-warning">Iván Gómez</h1>
-                <h6 class="txt text-white">Computer Engineering Student and Mobile App Developer</h6>
-                <p class="txt text-justify">I am a passionate computer software engineer student with a strong
+                <h6 class="txt text-white" data-i18n="hero.role">Computer Engineering Student and Mobile App Developer
+                </h6>
+                <p class="txt text-justify" data-i18n="hero.intro">I am a passionate computer software engineer student
+                    with a strong
                     interest in
                     mobile app development. I enjoy creating innovative solutions and continuously learning new
                     technologies. Welcome to my portfolio!</p>
@@ -81,15 +92,15 @@
             </div>
         </div>
 
-        <h3 id="about-me" class="text-warning mt-5 mb-4 text-center">About me</h3>
+        <h3 id="about-me" class="text-warning mt-5 mb-4 text-center" data-i18n="about.title">About me</h3>
         <div class="row">
             <div class="col-12 col-md-7">
-                <p class="txt text-justify">I am a curious person who constantly seeks to learn and
+                <p class="txt text-justify" data-i18n="about.p1">I am a curious person who constantly seeks to learn and
                     improve. I started my
                     journey in the world of software development with a Higher Vocational Degree in Multiplatform
                     Application Development (DAM), where I learned to build Android apps with Kotlin and also worked
                     with Flutter, C#/.NET and Java. </p>
-                <p class="txt text-justify">
+                <p class="txt text-justify" data-i18n="about.p2">
                     After finishing it, I felt the need to take on a new challenge to round out my education, so I
                     decided to study Computer Engineering at the University of Castilla-La Mancha (Albacete, Spain). I'm
                     now in my final year and eager to start my professional career. I'm looking for a software developer
@@ -101,7 +112,7 @@
                     <ul class="facts">
                         <li class="fact">
                             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                            <p>Albacete, Spain</p>
+                            <p data-i18n="about.location">Albacete, Spain</p>
                         </li>
                         <li class="fact">
                             <i class="fa-solid fa-cake-candles" aria-hidden="true"></i>
@@ -121,18 +132,18 @@
         </div>
 
 
-        <h3 id="work-experience" class="text-warning mt-5 mb-4 text-center">Work experience</h3>
+        <h3 id="work-experience" class="text-warning mt-5 mb-4 text-center" data-i18n="work.title">Work experience</h3>
         <div class="row">
             <div class="col-12 col-md-4 d-flex">
                 <div class="common-card flex-grow-1">
                     <ol class="timeline">
                         <li class="timeline-item">
-                            <h5 class="timeline-role">.NET Developer Intern</h5>
+                            <h5 class="timeline-role" data-i18n="work.role">.NET Developer Intern</h5>
                             <a class="timeline-company" href="https://www.solimat.com" target="_blank">Solimat
                                 (Mutua)
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                             </a>
-                            <p class="timeline-date">March 2023 - June 2023</p>
+                            <p class="timeline-date" data-i18n="work.date">March 2023 - June 2023</p>
                         </li>
                     </ol>
                 </div>
@@ -141,10 +152,13 @@
             <div class="col-12 col-md-8 d-flex">
                 <div class="common-card flex-grow-1">
                     <ul class="work-details text-justify pl-3">
-                        <li>Developed and optimized features in C# and .NET for a health records management system.</li>
-                        <li>Applied the MVVM pattern with MVVM Toolkit to separate business logic from the user
+                        <li data-i18n="work.d1">Developed and optimized features in C# and .NET for a health records
+                            management system.</li>
+                        <li data-i18n="work.d2">Applied the MVVM pattern with MVVM Toolkit to separate business logic
+                            from the user
                             interface.</li>
-                        <li>Used Git for version control and team collaboration, resolving issues and integrating new
+                        <li data-i18n="work.d3">Used Git for version control and team collaboration, resolving issues
+                            and integrating new
                             features.
                         </li>
                     </ul>
@@ -152,66 +166,67 @@
             </div>
         </div>
 
-        <h3 id="education" class="text-warning mt-5 mb-4 text-center">Education</h3>
+        <h3 id="education" class="text-warning mt-5 mb-4 text-center" data-i18n="edu.title">Education</h3>
         <div class="row">
             <div class="col-12 col-md-6 d-flex flex-column">
-                <h4 class="ed-title mb-2 flex-grow-1">Studies</h4>
+                <h4 class="ed-title mb-2 flex-grow-1" data-i18n="edu.studies">Studies</h4>
                 <div class="common-card mb-5">
                     <ol class="timeline">
                         <li class="timeline-item">
-                            <h5 class="timeline-role">Bachelor's Degree in Computer Engineering</h5>
+                            <h5 class="timeline-role" data-i18n="edu.degree1">Bachelor's Degree in Computer Engineering
+                            </h5>
                             <a class="timeline-company" href="https://www.uclm.es" target="_blank"
                                 rel="noopener noreferrer">
-                                University of Castilla-La Mancha (UCLM), Albacete
+                                <span data-i18n="edu.school1">University of Castilla-La Mancha (UCLM), Albacete</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                             </a>
-                            <p class="timeline-date">
+                            <p class="timeline-date" data-i18n="edu.date1">
                                 September 2023 - June 2027 (expected)
                             </p>
                         </li>
                     </ol>
                     <ol class="timeline">
                         <li class="timeline-item">
-                            <h5 class="timeline-role">Higher Vocational Degree in Multiplatform
+                            <h5 class="timeline-role" data-i18n="edu.degree2">Higher Vocational Degree in Multiplatform
                                 Application Development (DAM)</h5>
-                            <a class="timeline-company" href="http://www.ies-azarquiel.es/" target="_blank">IES
-                                Azarquiel, Toledo
+                            <a class="timeline-company" href="http://www.ies-azarquiel.es/" target="_blank">
+                                <span data-i18n="edu.school2">IES Azarquiel, Toledo</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                             </a>
 
-                            <p class="timeline-date">September 2021 - June 2023</p>
+                            <p class="timeline-date" data-i18n="edu.date2">September 2021 - June 2023</p>
                         </li>
                     </ol>
                     <ol class="timeline">
                         <li class="timeline-item">
-                            <h5 class="timeline-role font-weight-bold">Baccalaureate</h5>
+                            <h5 class="timeline-role font-weight-bold" data-i18n="edu.degree3">Baccalaureate</h5>
                             <a class="timeline-company"
-                                href="https://ies-garcilasodelavega.centros.castillalamancha.es/" target="_blank">IES
-                                Garcilaso de la Vega, Villacañas, Toledo
+                                href="https://ies-garcilasodelavega.centros.castillalamancha.es/" target="_blank">
+                                <span data-i18n="edu.school3">IES Garcilaso de la Vega, Villacañas, Toledo</span>
                                 <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                            <p class="timeline-date">September 2019 - June 2021</p>
+                            <p class="timeline-date" data-i18n="edu.date3">September 2019 - June 2021</p>
                         </li>
                     </ol>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex flex-column">
-                <h4 class="ed-title mb-2">Languages</h4>
+                <h4 class="ed-title mb-2" data-i18n="edu.languages">Languages</h4>
                 <div class="common-card mb-5 flex-grow-1">
                     <ol class="timeline">
                         <li class="timeline-item">
-                            <h5 class="timeline-role font-weight-bold">B2 English</h5>
+                            <h5 class="timeline-role font-weight-bold" data-i18n="edu.lang1">B2 English</h5>
                         </li>
                     </ol>
                     <ol class="timeline">
                         <li class="timeline-item">
-                            <h5 class="timeline-role font-weight-bold">Native Spanish</h5>
+                            <h5 class="timeline-role font-weight-bold" data-i18n="edu.lang2">Native Spanish</h5>
                         </li>
                     </ol>
                 </div>
             </div>
         </div>
 
-        <h3 id="projects" class="text-warning mt-5 mb-4 text-center">Projects</h3>
+        <h3 id="projects" class="text-warning mt-5 mb-4 text-center" data-i18n="projects.title">Projects</h3>
         <div class="common-card p-3">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6">
@@ -220,7 +235,8 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <h4 class="mx-4 mt-3">InventAza</h4>
-                    <p class="mx-4 text-justify">A Flutter-based mobile application developed as the final project of
+                    <p class="mx-4 text-justify" data-i18n="projects.inventaza">A Flutter-based mobile application
+                        developed as the final project of
                         the Multiplatform Application Development programme (DAM) at IES Azarquiel. InventAza provides a
                         hierarchical school inventory management system, allowing users to browse, search and identify
                         items across buildings and classrooms. It also supports generating and sharing PDF reports
@@ -236,27 +252,29 @@
                 <div class="col-12 col-lg-6">
                     <div class="row mb-2">
                         <div class="col-6 m-0 p-0 px-1">
-                            <img class="img-fluid project-card zoom" src="assets/img/tsm/home.png" alt="Project Image">
+                            <img class="img-fluid project-card zoom" src="assets/img/tsm/home.png" alt="Project Image"
+                                data-i18n-attr="alt:projects.imageAlt">
                         </div>
                         <div class="col-6 m-0 p-0 px-1">
                             <img class="img-fluid project-card zoom" src="assets/img/tsm/swagger.png"
-                                alt="Project Image">
+                                alt="Project Image" data-i18n-attr="alt:projects.imageAlt">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 m-0 p-0 px-1">
                             <img class="img-fluid project-card zoom" src="assets/img/tsm/purchases.png"
-                                alt="Project Image">
+                                alt="Project Image" data-i18n-attr="alt:projects.imageAlt">
                         </div>
                         <div class="col-6 m-0 p-0 px-1">
                             <img class="img-fluid project-card zoom" src="assets/img/tsm/create-purchase.png"
-                                alt="Project Image">
+                                alt="Project Image" data-i18n-attr="alt:projects.imageAlt">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <h4 class="mx-4 mt-3">Tool Store Management</h4>
-                    <p class="mx-4 text-justify">A full-stack tool store management application developed as part of the
+                    <p class="mx-4 text-justify" data-i18n="projects.tsm">A full-stack tool store management
+                        application developed as part of the
                         Software Engineering II subject at UCLM. Built with C#, .NET 8, ASP.NET Core, Blazor and Entity
                         Framework Core, it provides features for managing tool catalogues, purchases, rentals, repairs
                         and special offers. The project follows a layered architecture and was developed collaboratively
@@ -272,27 +290,28 @@
                     <div class="row mb-2">
                         <div class="col-6 m-0 p-0 px-1">
                             <img class="img-fluid project-card zoom" src="assets/img/oc/catalogue.png"
-                                alt="Project Image">
+                                alt="Project Image" data-i18n-attr="alt:projects.imageAlt">
                         </div>
                         <div class="col-6 m-0 p-0 px-1">
                             <img class="img-fluid project-card zoom" src="assets/img/oc/filter-by-type.png"
-                                alt="Project Image">
+                                alt="Project Image" data-i18n-attr="alt:projects.imageAlt">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 m-0 p-0 px-1">
                             <img class="img-fluid project-card zoom" src="assets/img/oc/trim-levels.png"
-                                alt="Project Image">
+                                alt="Project Image" data-i18n-attr="alt:projects.imageAlt">
                         </div>
                         <div class="col-6 m-0 p-0 px-1">
                             <img class="img-fluid project-card zoom" src="assets/img/oc/test-drive.png"
-                                alt="Project Image">
+                                alt="Project Image" data-i18n-attr="alt:projects.imageAlt">
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <h4 class="mx-4 mt-3">Opel Cars</h4>
-                    <p class="mx-4 text-justify">A Java EE web application with a catalogue of Opel cars, filters by
+                    <p class="mx-4 text-justify" data-i18n="projects.opel">A Java EE web application with a catalogue
+                        of Opel cars, filters by
                         type, trim levels loaded with AJAX and test-drive booking. Built with JPA (EclipseLink) and an
                         embedded H2 database as coursework for the Data Access module of the DAM programme.
                     </p>
@@ -306,16 +325,16 @@
                 target="_blank" rel="noopener noreferrer">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt=""
                     width="22" height="22">
-                See more projects on GitHub
+                <span data-i18n="projects.more">See more projects on GitHub</span>
                 <span aria-hidden="true">→</span>
             </a>
         </div>
 
-        <h3 id="skills" class="text-warning mt-5 mb-4 text-center">Skills</h3>
+        <h3 id="skills" class="text-warning mt-5 mb-4 text-center" data-i18n="skills.title">Skills</h3>
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="common-card">
-                    <h4 class="text-center mt-0 mb-4">Programming languages</h4>
+                    <h4 class="text-center mt-0 mb-4" data-i18n="skills.languages">Programming languages</h4>
                     <div class="row">
                         <div class="col-4 col-sm-4">
                             <div class="skills-card justify-content-center align-items-center d-flex flex-column">
@@ -366,7 +385,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="common-card">
-                    <h4 class="text-center mt-0 mb-4">Tools & IDEs</h4>
+                    <h4 class="text-center mt-0 mb-4" data-i18n="skills.tools">Tools & IDEs</h4>
                     <div class="row">
                         <div class="col-4 col-sm-4">
                             <div class="skills-card justify-content-center align-items-center d-flex flex-column">
@@ -419,7 +438,7 @@
         <div class="row">
             <div class="col-12 col-md-6">
                 <div class="common-card">
-                    <h4 class="text-center mt-0 mb-4">Frameworks & web</h4>
+                    <h4 class="text-center mt-0 mb-4" data-i18n="skills.frameworks">Frameworks & web</h4>
                     <div class="row">
                         <div class="col-4 col-sm-4">
                             <div class="skills-card justify-content-center align-items-center d-flex flex-column">
@@ -447,7 +466,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="common-card">
-                    <h4 class="text-center mt-0 mb-4">Databases</h4>
+                    <h4 class="text-center mt-0 mb-4" data-i18n="skills.databases">Databases</h4>
                     <div class="row g-2">
                         <div class="col-4 col-sm-4">
                             <div class="skills-card justify-content-center align-items-center d-flex flex-column">
@@ -476,7 +495,7 @@
     </div>
     <footer>
         <div class="footer-copyright">
-            <p>Iván Gómez &copy; 2026. All rights reserved.</p>
+            <p data-i18n="footer.rights">Iván Gómez &copy; 2026. All rights reserved.</p>
         </div>
         <div class="footer-socials">
             <a href="mailto:ivangomez.rodriguez@outlook.es" title="Email" aria-label="Email">
@@ -504,14 +523,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/i18n.js" defer></script>
     <script src="js/script.js" defer></script>
 
     <!-- Image Lightbox -->
     <div id="lightbox">
-        <button id="lightbox-close" aria-label="Close image">
+        <button id="lightbox-close" aria-label="Close image" data-i18n-attr="aria-label:lightbox.close">
             &times;
         </button>
-        <img id="lightbox-img" src="" alt="Enlarged project image">
+        <img id="lightbox-img" src="" alt="Enlarged project image" data-i18n-attr="alt:lightbox.alt">
     </div>
 </body>
 
