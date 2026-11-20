@@ -2,6 +2,36 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Technologies used in each project */
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.tech-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.8rem 0.3rem 0.6rem;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    color: #cfe0e3;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.tech-chip img {
+    width: 20px;
+    height: 20px;
+}
+
 body {
     padding: 0;
     margin: 0;
